@@ -19,10 +19,10 @@ class Category extends Component {
     render() { 
         return ( 
             <React.Fragment>
-                {this.props.menuChosen.content == "computer" ? <ComputerCategory menuChosen={this.props.menuChosen} onChooseCategory={this.props.onChooseCategory} selectPage={this.props.selectPage}/> : null}
-                {this.props.menuChosen.content == "games" ? <GamesCategory menuChosen={this.props.menuChosen} onChooseCategory={this.props.onChooseCategory} selectPage={this.props.selectPage}/> : null}
-                {this.props.menuChosen.content == "board" ? <BoardgamesCategory menuChosen={this.props.menuChosen} onChooseCategory={this.props.onChooseCategory} selectPage={this.props.selectPage}/> : null}
-                {this.props.menuChosen.content == "toys" ? <ToysCategory menuChosen={this.props.menuChosen} onChooseCategory={this.props.onChooseCategory} selectPage={this.props.selectPage}/> : null}
+                {this.props.menuChosen.content === "computer" ? <ComputerCategory menuChosen={this.props.menuChosen} onChooseCategory={this.props.onChooseCategory} selectPage={this.props.selectPage}/> : null}
+                {this.props.menuChosen.content === "games" ? <GamesCategory menuChosen={this.props.menuChosen} onChooseCategory={this.props.onChooseCategory} selectPage={this.props.selectPage}/> : null}
+                {this.props.menuChosen.content === "board" ? <BoardgamesCategory menuChosen={this.props.menuChosen} onChooseCategory={this.props.onChooseCategory} selectPage={this.props.selectPage}/> : null}
+                {this.props.menuChosen.content === "toys" ? <ToysCategory menuChosen={this.props.menuChosen} onChooseCategory={this.props.onChooseCategory} selectPage={this.props.selectPage}/> : null}
             </React.Fragment>
          );
     }

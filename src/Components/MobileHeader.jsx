@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { faBars} from '@fortawesome/free-solid-svg-icons'
 
 
 import picture from "../img/logo.png"
@@ -13,7 +13,7 @@ class MobileHeader extends Component {
     showHideCart = () => {
         const cart = document.getElementById("shoppingCart");
 
-        if (cart.style.display != "flex") {
+        if (cart.style.display !== "flex") {
             cart.style.display = "flex"
         }else {
             cart.style.display = "none"
@@ -32,7 +32,7 @@ class MobileHeader extends Component {
                         <FontAwesomeIcon icon={faBars} size="3x" />
                     </div>
                     <div onClick={() => this.props.clickHeader(1)} id="headerLogo">
-                        <img src={picture}/>
+                        <img src={picture} alt="Hello"/>
                     </div>
                 </div>
             </header>

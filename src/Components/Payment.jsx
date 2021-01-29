@@ -57,60 +57,60 @@ class Payment extends Component {
         let stateCopy = {...this.state.customerInfo}
 
 
-        if (event.target.id == "nameInput") {
+        if (event.target.id === "nameInput") {
 
             let inputValue = event.target.value
             stateCopy.nameInput = this.checkForValidString(inputValue);
 
-            if (stateCopy.nameInput == "") {
+            if (stateCopy.nameInput === "") {
                 event.target.value = "";
             }
 
 
         }
 
-        if (event.target.id == "adressInput") {
+        if (event.target.id === "adressInput") {
 
             let inputValue = event.target.value
             stateCopy.adressInput = this.checkForValidString(inputValue);
 
-            if (stateCopy.adressInput == "") {
+            if (stateCopy.adressInput === "") {
                 event.target.value = "";
             }
         }
 
-        if (event.target.id == "mobileInput") {
+        if (event.target.id === "mobileInput") {
 
             let inputValue = event.target.value
             stateCopy.mobileInput = this.checkForValidNumber(inputValue);
 
-            if (stateCopy.mobileInput == "") {
+            if (stateCopy.mobileInput === "") {
                 event.target.value = "";
             }
         }
 
-        if (event.target.id == "emailInput") {
+        if (event.target.id === "emailInput") {
 
             stateCopy.emailInput = event.target.value
 
         }
 
-        if (event.target.id == "postNumberInput") {
+        if (event.target.id === "postNumberInput") {
 
             let inputValue = event.target.value
             stateCopy.postNumberInput = this.checkForValidNumber(inputValue);
 
-            if (stateCopy.postNumberInput == "") {
+            if (stateCopy.postNumberInput === "") {
                 event.target.value = "";
             }
         }
 
-        if (event.target.id == "localeInput") {
+        if (event.target.id === "localeInput") {
 
             let inputValue = event.target.value
             stateCopy.localeInput = this.checkForValidString(inputValue);
 
-            if (stateCopy.localeInput == "") {
+            if (stateCopy.localeInput === "") {
                 event.target.value = "";
             }
         }
@@ -130,21 +130,21 @@ class Payment extends Component {
 
          let chosenPayment;
 
-        if(event.target.innerHTML == "Kortbetalning") {
+        if(event.target.innerHTML === "Kortbetalning") {
             card.style.display = "flex";
             klarna.style.display = "none";
             swish.style.display = "none";
 
             chosenPayment = "card"
         }
-        if(event.target.innerHTML == "Klarna") {
+        if(event.target.innerHTML === "Klarna") {
             card.style.display = "none";
             klarna.style.display = "flex";
             swish.style.display = "none";
 
             chosenPayment = "klarna"
         }
-        if(event.target.innerHTML == "Swish") {
+        if(event.target.innerHTML === "Swish") {
             card.style.display = "none";
             klarna.style.display = "none";
             swish.style.display = "flex";
@@ -165,25 +165,25 @@ class Payment extends Component {
 
          let stateCopy = {...this.state.paymentFilledIn}
 
-         if(checkIfOnlyNumbers == ""){
+         if(checkIfOnlyNumbers === ""){
              event.target.value = ""
              return;
          }
 
-         if(valueSaved.id == "cardNumber") {
+         if(valueSaved.id === "cardNumber") {
              console.log(valueSaved.value.length)
-             if(valueSaved.value.length == 12) {
+             if(valueSaved.value.length === 12) {
                 stateCopy.card = true;
              }
          }
-         if(valueSaved.id == "cardMonth") {
-            if(valueSaved.value.length == 4) {
+         if(valueSaved.id === "cardMonth") {
+            if(valueSaved.value.length === 4) {
                 stateCopy.month = true;
              }
              
         }
-        if(valueSaved.id == "cardCvc") {
-            if(valueSaved.value.length == 3) {
+        if(valueSaved.id === "cardCvc") {
+            if(valueSaved.value.length === 3) {
                 stateCopy.cvc = true;
              }
              
@@ -194,9 +194,6 @@ class Payment extends Component {
 
 
      resetPayment = () => {
-        let cardInput = document.getElementById("cardNumber").value = "";
-        let month = document.getElementById("cardMonth").value = "";
-        let cvc = document.getElementById("cardCvc").value = "";
 
 
         const resetPayment = {
@@ -221,7 +218,7 @@ class Payment extends Component {
 
         console.log(event.target)
         let target = event.target;
-        if (target.tagName == "P") {
+        if (target.tagName === "P") {
             target = target.parentElement;
         }
         target.style.backgroundColor = "lightblue"
@@ -243,7 +240,7 @@ class Payment extends Component {
 
         console.log(event.target)
         let target = event.target;
-        if (target.tagName == "P") {
+        if (target.tagName === "P") {
             target = target.parentElement;
         }
         target.style.backgroundColor = "lightblue"

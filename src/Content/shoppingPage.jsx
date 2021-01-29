@@ -11,9 +11,6 @@ import picture from "../img/banner.jpg"
 const apiKey = 'rVhwWD9xG3DBo1PXD3fWGeAO' // process.env.REACT_APP_BESTBUY_API_KEY
 
 class ShoppingPage extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     state = { 
         productsLoaded: false,
@@ -127,7 +124,7 @@ class ShoppingPage extends Component {
     displayTheProducts = () => {
         setTimeout(() => { 
             
-            this.state.productsLoaded = true;
+            this.setState({productsLoaded: true})
             this.forceUpdate()
         
         }, 1000);

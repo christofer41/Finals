@@ -52,11 +52,11 @@ class Content extends Component {
         return ( 
             <main id="mainContent">
 
-            {this.props.menuChosen.page == 1 ? <Frontpage /> : null}
-            {this.props.menuChosen.page == 2 ? <Category menuChosen={this.props.menuChosen} onChooseCategory={this.categoryChosen} selectPage={this.props.selectPage} /> : null}
-            {this.props.menuChosen.page == 3 ? <ShoppingPage backwards={this.props.backwards} chosenCategory={this.state.chosenCategory} specificItemChosen={this.props.specificItemChosen} theProductItself={this.productChosen}/> : null}
-            {this.props.menuChosen.page == 4 ? <ProductPage addItemToCart={this.props.addItemToCart} chosenProduct={this.state.chosenProduct}/> : null}
-            {this.props.menuChosen.page == 6 ? <HelpPage backwards={this.props.backwards}/> : null}
+            {this.props.menuChosen.page === 1 ? <Frontpage /> : null}
+            {this.props.menuChosen.page === 2 ? <Category menuChosen={this.props.menuChosen} onChooseCategory={this.categoryChosen} selectPage={this.props.selectPage} /> : null}
+            {this.props.menuChosen.page === 3 ? <ShoppingPage backwards={this.props.backwards} chosenCategory={this.state.chosenCategory} specificItemChosen={this.props.specificItemChosen} theProductItself={this.productChosen}/> : null}
+            {this.props.menuChosen.page === 4 ? <ProductPage addItemToCart={this.props.addItemToCart} chosenProduct={this.state.chosenProduct}/> : null}
+            {this.props.menuChosen.page === 6 ? <HelpPage backwards={this.props.backwards}/> : null}
 
                      
             </main>

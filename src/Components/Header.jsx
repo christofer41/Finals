@@ -13,7 +13,7 @@ class Header extends Component {
     showHideCart = () => {
         const cart = document.getElementById("shoppingCart");
 
-        if (cart.style.display != "flex") {
+        if (cart.style.display !== "flex") {
             cart.style.display = "flex"
         }else {
             cart.style.display = "none"
@@ -34,7 +34,7 @@ class Header extends Component {
                 </div>
                 <div id="bottomHeader">
                     <div onClick={() => this.props.clickHeader(1)} id="headerLogo">
-                        <img src={picture}/>
+                        <img src={picture} alt="Hello"/>
                     </div>
                     <div>
                         <button onClick={this.showHideCart}><FontAwesomeIcon icon={faShoppingCart} /> Kundvagn</button>

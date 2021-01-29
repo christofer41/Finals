@@ -23,7 +23,7 @@ class HelpPage extends Component {
         return ( 
             <React.Fragment>
                 
-                    {this.state.showChatt == true ? <Support hideChatt={this.hideChatt}/> : null}
+                    {this.state.showChatt === true ? <Support hideChatt={this.hideChatt}/> : null}
                 
                     <div id="helpTop"> 
                         <h1>Välkommen till hjälpsidan!</h1>

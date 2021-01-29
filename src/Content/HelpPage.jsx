@@ -21,7 +21,7 @@ class HelpPage extends Component {
     render() { 
         return ( 
             <div id="helpPage">
-                {this.state.page != 1 ? <button onClick={this.reloadPage} id="backButton">Back</button> : null}
+                {this.state.page !== 1 ? <button onClick={this.reloadPage} id="backButton">Back</button> : null}
                 {this.state.page === 1 ? <HelpFrontPage changeHelpPage={this.changeHelpPage}/> : null}
                 {this.state.page === 2 ? <HelpPageOthers/> : null}
                 {this.state.page === 3 ? <HelpComputers/> : null}

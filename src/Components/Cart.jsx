@@ -27,21 +27,21 @@ class Cart extends Component {
      setActiveDelivery = (delivery) => {
          let array = {}
 
-         if (delivery == 1) {
+         if (delivery === 1) {
             array = {
                 company: "Bring",
                 time: "1-3 Arbetsdagar",
                 price: 79
             }
 
-        } else if (delivery == 2) {
+        } else if (delivery === 2) {
             array = {
                 company: "DHL",
                 time: "1-2 Arbetsdagar",
                 price: 99
             }
             
-        } else if (delivery == 3) {
+        } else if (delivery === 3) {
             array = {
                 company: "Postnord",
                 time: "2-3 Arbetsdagar",
@@ -62,32 +62,32 @@ class Cart extends Component {
             const customerInfo = {...this.state.customerInfo}
 
 
-            if(customerInfo.name == "" || customerInfo.name == null) {
+            if(customerInfo.name === "" || customerInfo.name === null) {
                 alert("Var vänlig och fyll i ditt namn")
                 return;
             }
             
-            if(customerInfo.adress == "" || customerInfo.adress == null) {
+            if(customerInfo.adress === "" || customerInfo.adress === null) {
                 alert("Var vänlig och fyll i din adress")
                 return;
             }
             
-            if(customerInfo.mobile == "" || customerInfo.mobile == null) {
+            if(customerInfo.mobile === "" || customerInfo.mobile === null) {
                 alert("Var vänlig och fyll i ditt mobilnummer")
                 return;
             }
             
-            if(customerInfo.email == "" || customerInfo.email == null) {
+            if(customerInfo.email === "" || customerInfo.email === null) {
                 alert("Var vänlig och fyll i din email adress")
                 return;
             }
             
-            if(customerInfo.postNr == "" || customerInfo.postNr == null) {
+            if(customerInfo.postNr === "" || customerInfo.postNr === null) {
                 alert("Var vänlig och fyll i ditt postnummer")
                 return;
             }
             
-            if(customerInfo.locale == "" || customerInfo.locale == null) {
+            if(customerInfo.locale === "" || customerInfo.locale === null) {
                 alert("Var vänlig och fyll i din postort")
                 return;
             } 
@@ -99,7 +99,7 @@ class Cart extends Component {
      checkDeliveryChosen = (payment) => {
         const delivery = {...this.state.delivery}
 
-        if (delivery.company == "" || delivery.company == null) {
+        if (delivery.company === "" || delivery.company === null) {
             alert("Var vänlig och välj ett leverans alternativ!")
             return;
         }
@@ -110,21 +110,21 @@ class Cart extends Component {
 
     checkPayment = (payment) => {
 
-        if (this.state.payChoice == "card") {
-            if(payment.card == false && payment.month == false && payment.cvc == false) {
+        if (this.state.payChoice === "card") {
+            if(payment.card === false && payment.month === false && payment.cvc === false) {
                 alert("var vänlig och fyll i dina kort uppgifter")
                 return;
             }
         }
 
-        if (this.state.payChoice == "klarna") {
-            if(payment.klarna == false) {
+        if (this.state.payChoice === "klarna") {
+            if(payment.klarna === false) {
                 alert("var vänlig och välj dina klara betalningssätt")
                 return;
             }
         }
 
-        if (this.state.payChoice == "swish") {
+        if (this.state.payChoice === "swish") {
         }
 
         this.showReciept();
@@ -133,7 +133,7 @@ class Cart extends Component {
     showReciept = () => {
         const reciept = document.getElementById("recieptMain");
 
-        if (reciept.style.display != "flex") {
+        if (reciept.style.display !== "flex") {
             reciept.style.display = "flex"
         }else {
             reciept.style.display = "none"

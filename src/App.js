@@ -80,7 +80,7 @@ addItemToCart = (item) => {
 
 
   for (let i = 0; i < itemToCartArray.length; i++) {
-    if (item.id == itemToCartArray[i].id) {
+    if (item.id === itemToCartArray[i].id) {
       itemToCartArray[i].amount ++;
       itemToCartArray[i].priceForAll = item.price * itemToCartArray[i].amount ;
       this.setState({itemToCart: itemToCartArray});
@@ -124,7 +124,7 @@ backwards = (number) => {
 
 displayHamburger = () => {
 
-  if (this.state.showHamburgerMenu == false) {
+  if (this.state.showHamburgerMenu === false) {
     this.setState({showHamburgerMenu: true});
   } else {
     this.setState({showHamburgerMenu: false});
@@ -154,13 +154,13 @@ render() {
   return (
     <React.Fragment>
 
-      {this.state.showHamburgerMenu != false  ? <HamburgerMenu displayHamburger={this.displayHamburger} selectPage={this.changePage} clickHeader={this.handleIncrement} clickSidebar={this.handleIncrement} /> : null}
+      {this.state.showHamburgerMenu !== false  ? <HamburgerMenu displayHamburger={this.displayHamburger} selectPage={this.changePage} clickHeader={this.handleIncrement} clickSidebar={this.handleIncrement} /> : null}
       
       <MobileHeader displayHamburger={this.displayHamburger} clickHeader={this.handleIncrement}/>
       <Header upTheNumber={this.upTheNumber} addItemToCart={this.state.itemToCart} selectPage={this.changePage} clickHeader={this.handleIncrement}/>
-      {this.state.pageChosen.page != 5  ? <Sidebar clickSidebar={this.handleIncrement}/> : null}
-      {this.state.pageChosen.page != 5  ? <Content backwards={this.backwards} addItemToCart={this.addItemToCart} menuChosen={this.state.pageChosen} selectPage={this.changePage} specificItemChosen={this.itemSelected}/> : null}
-      {this.state.pageChosen.page == 5 ? <Cart upTheNumber={this.upTheNumber} addItemToCart={this.state.itemToCart} displayTotalPrice={this.state.totalPrice}/> : null}
+      {this.state.pageChosen.page !== 5  ? <Sidebar clickSidebar={this.handleIncrement}/> : null}
+      {this.state.pageChosen.page !== 5  ? <Content backwards={this.backwards} addItemToCart={this.addItemToCart} menuChosen={this.state.pageChosen} selectPage={this.changePage} specificItemChosen={this.itemSelected}/> : null}
+      {this.state.pageChosen.page === 5 ? <Cart upTheNumber={this.upTheNumber} addItemToCart={this.state.itemToCart} displayTotalPrice={this.state.totalPrice}/> : null}
       
       
       

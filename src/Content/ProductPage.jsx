@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeadset, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { faHeadset} from '@fortawesome/free-solid-svg-icons'
 import "../Styles/productPage.css"
 
 import Support from "../Content/contentComponents/Support"
@@ -25,7 +25,7 @@ class ProductPage extends Component {
     render() { 
         return ( 
             <React.Fragment>
-                {this.state.showChatt == true ? <Support hideChatt={this.hideChatt}/> : null}
+                {this.state.showChatt === true ? <Support hideChatt={this.hideChatt}/> : null}
 
 
                 <div id="productPageTop">
