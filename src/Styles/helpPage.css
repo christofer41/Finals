@@ -1,0 +1,85 @@
+#mainContent {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#helpPage {
+    height: 100%;
+}
+
+
+#helpTop {
+    height: 40%;
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#helpSlideShop {
+    width: 80%;
+    height: 60%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+
+    border: 2px solid green;
+}
+
+#helpSlideShop img {
+    height: 100%;
+}
+
+#helpBottom {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#helpItems {
+
+    width: 80%;
+    height: 50%;
+    margin: 10px;
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+#helpItems div {
+
+    border: 2px solid orange;
+    height: 182px;
+    width: 300px;
+    margin: 10px;
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+#helpItems div:hover{
+    opacity: 0.3;
+    box-shadow: 0px 0x 5px rgba(255, 255, 255, 0.8),
+      3px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+#helpItems div:active {
+    opacity: 1;
+    box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+      inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+    color: #79e3b6;
+  }
+  

@@ -1,0 +1,192 @@
+@media only screen 
+and (min-width : 1000px) {  
+
+
+#productDiv {
+    border-bottom: 2px groove black;
+    margin-bottom: 10px;
+    max-width: 50%;
+    min-width: 300px;
+}
+
+#productName, #productInfo {
+    text-align: center;
+}
+
+
+#productContent {
+    height: 100px;
+    display: flex;
+}
+
+#productContent img {
+    max-width: 100%;
+    height: 95px;
+
+}
+
+#productContent div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#productContent div {
+    width: 25%;
+}
+
+#productAmount >*{
+    margin: 10px;
+}
+
+#productAmount button {
+    width: 40px;
+    height: 30px;
+}
+
+#productInfo >*, #productName >* {
+    margin: 2px
+}
+
+#amountOfProduct {
+    width: 10px;
+}
+
+}
+
+
+
+
+
+@media only screen 
+and (max-width : 999px) and (min-width : 650px) { 
+
+    #productDiv {
+    border-bottom: 2px groove black;
+    margin-bottom: 10px;
+    max-width: 50%;
+    min-width: 250px;
+}
+
+#productName, #productInfo {
+    text-align: center;
+}
+
+
+#productContent {
+    height: 100px;
+    display: flex;
+}
+
+#productContent img {
+    max-width: 100%;
+    height: 95px;
+
+}
+
+#productContent div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#productContent div {
+    width: 25%;
+}
+
+#productAmount >*{
+    margin: 10px;
+}
+
+#productAmount button {
+    width: 40px;
+    height: 30px;
+}
+
+#productInfo >*, #productName >* {
+    margin: 2px
+}
+
+#amountOfProduct {
+    width: 10px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen 
+and (max-width : 649px) { 
+
+    #productDiv {
+        border: 2px solid black;
+    border-bottom: 2px groove black;
+    
+    margin-bottom: 10px;
+    max-width: 50%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#productName, #productInfo {
+    text-align: center;
+}
+
+
+#productContent {
+    height: 100px;
+    display: flex;
+
+
+}
+
+#productImage {
+    display: none;
+}
+
+
+#productImage img {
+    display: none;
+
+}
+
+#productContent div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+#productAmount >*{
+    margin: 10px;
+}
+
+#productAmount button {
+    width: 40px;
+    height: 30px;
+}
+
+#productInfo >*, #productName >* {
+    margin: 2px
+}
+
+#amountOfProduct {
+    width: 10px;
+}
+
+}

@@ -1,0 +1,298 @@
+@media only screen 
+and (min-width : 1000px) {  
+
+
+#mainContent {
+    overflow:scroll;
+    overflow-x: hidden;
+}
+
+#productPageTop {
+    height: 50%;
+    max-height: 380px;
+    min-height: 380px;
+    display: flex;
+
+}
+
+#productPageTop >* {
+    margin: 10px
+}
+
+#ProductPageSlideshowContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#ProductPageSlideshow {
+    width: 80%;
+    margin: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+
+#ProductPageSlideshow img {
+    height: 100%;
+}
+
+#productPagePaymentInfo {
+    border-left: 1px solid rgb(0, 0, 0);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+#productPagePaymentInfo >*{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#productPageStatus{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+#productPagePrice {
+    width: 100%;
+    height: 60%;
+    border-top: 1px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#productPageBottom {
+    height: 50%;
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#ProductPageInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#ProductPageInfo button {
+    width: 20%;
+}
+
+
+#ProductPageFooter {
+
+    border-top: 1px dotted black;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#ProductPageFooter div {
+
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#ProductPageFooter div >* {
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+#ProductPageFooter div div {
+    cursor: pointer;
+    width: 100px;
+    height: 100%;
+}
+
+#ProductPageFooter div div:hover{
+    opacity: 0.3;
+    box-shadow: 0px 0x 5px rgba(255, 255, 255, 0.8),
+      3px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+#ProductPageFooter div div:active{
+    opacity: 1;
+    box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+      inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+    color: #79e3b6;
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen 
+and (max-width : 999px) {  
+
+    #mainContent {
+        overflow:scroll;
+        overflow-x: hidden;
+    }
+    
+    #productPageTop {
+        height: 50%;
+        max-height: 380px;
+        min-height: 380px;
+        display: flex;
+        flex-direction: column;
+
+
+    
+    }
+    
+    
+    #ProductPageSlideshowContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 50%;
+        border-bottom: 1px solid black;
+    }
+    
+    #ProductPageSlideshow {
+        width: 80%;
+        margin: 10px;
+    
+        display: flex;
+        justify-content: center;
+    }
+    
+    #ProductPageSlideshow img {
+        height: 100%;
+    }
+    
+    #productPagePaymentInfo {
+        border-left: 1px solid rgb(0, 0, 0);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+    }
+    
+    #productPagePaymentInfo >*{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    #productPageStatus{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    
+    #productPagePrice {
+        width: 100%;
+        height: 60%;
+        border-top: 1px solid rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #productPageBottom {
+        height: 50%;
+        border-top: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    #ProductPageInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    #ProductPageInfo button {
+        width: 20%;
+    }
+    
+    
+    #ProductPageFooter {
+    
+        border-top: 1px dotted black;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #ProductPageFooter div {
+    
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+    
+    }
+    #ProductPageFooter div h2{
+        font-size: 20px;
+    
+    }
+    
+    #ProductPageFooter div >* {
+        margin-left: 10px;
+        margin-right: 10px;
+    
+    }
+    
+    #ProductPageFooter div div {
+        cursor: pointer;
+        width: 100px;
+        height: 100%;
+    }
+    
+    #ProductPageFooter div div:hover{
+        opacity: 0.3;
+        box-shadow: 0px 0x 5px rgba(255, 255, 255, 0.8),
+          3px 3px 5px rgba(0, 0, 0, 0.2);
+      }
+      
+    #ProductPageFooter div div:active{
+        opacity: 1;
+        box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+          inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+        color: #79e3b6;
+      }
+    
+    
+
+
+}

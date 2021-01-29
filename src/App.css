@@ -1,0 +1,746 @@
+@media only screen 
+and (min-width : 1000px) {  
+
+
+
+  html, body, #root {
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  
+  #root {
+    display: grid;
+    grid-template-columns: 250px auto auto auto;
+    grid-template-rows: 170px auto auto;
+    grid-template-areas: 
+      "header header header header"
+      "sidebar main main main"
+      "sidebar main main main";
+  }
+  
+  
+  #mainContent {
+    overflow: visible;
+  }
+  
+  /*HEADER*/
+  
+  Header {
+    grid-area: header;
+    background-color: #FF914D;
+  }
+
+  #mobileHeader {
+    display: none;
+  }
+  
+  
+  #topHeader {
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: 0px 5px #888888;
+    color: white;
+    background-color: #5ba2ff;
+    height: 30%;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  
+  #topHeaderLeft {
+    margin-left: 70px;
+  }
+  
+  #topHeaderLeft div:first-of-type {
+    border-right: 2px solid black;
+    height:50%
+  }
+  
+  #topHeaderLeft div:last-of-type {
+    border-left: 2px solid black;
+    height:50%
+  }
+  
+  #topHeaderRight {
+    margin-right: 20px;
+  }
+  
+  #topHeader div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #topHeader div >*{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  
+  /*-------------------------------------------------*/
+  
+  
+  #bottomHeader {
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #bottomHeader div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  #headerLogo {
+    width: 200px;
+  }
+  
+  #headerSearch input {
+    width: 400px;
+    height: 30%;
+  }
+  
+  #bottomHeader button:first-of-type {
+    width: 150px;
+    height: 45px;
+    margin: 10px;
+    background-color: #4E6BBA;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+  }
+  #bottomHeader button:last-of-type {
+    width: 100px;
+    height: 45px;
+    margin: 10px;
+    background-color: #4E6BBA;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+  }
+  
+  
+  #bottomHeader button:hover{
+    opacity: 0.3;
+    box-shadow: 0px 0x 5px rgba(255, 255, 255, 0.8),
+      3px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  #bottomHeader button:active {
+    opacity: 1;
+    box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+      inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+    color: #79e3b6;
+  }
+  
+  
+  #shoppingCart {
+    display: none;
+    border: 2px solid red;
+    height: 500px;
+    width: 600px;
+    position:absolute;
+    background-color: rgb(255, 255, 255);
+    right: 0;
+  
+    flex-direction: column;
+  
+  }
+  
+  #shoppingCartItems {
+    height: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  
+  #shoppingCart button {
+    height: 10%;
+  }
+  
+  
+  
+  
+  /***************************************************************************************************************************************************/
+  /*SIDEBAR*/
+
+  #HamburgerMenu {
+    display: none;
+  }
+
+  
+  
+  #sideBar {
+  
+    background-color: #ff914dcc;
+    grid-area: sidebar;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 50px;
+    grid-template-areas: 
+      "topSidebar"
+      "bottomSidebar";
+  }
+  
+  #topSidebar {
+    grid-area: topSidebar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #topSidebar button{
+    width: 90%;
+    height: 50px;
+    background-color: white;
+  }
+  
+  #topSidebar >*{
+    margin: 20px;
+  } 
+  
+  #topSidebar button:first-of-type {
+    margin-top: 100px;
+  }
+  
+  
+  #topSidebar button:hover{
+    opacity: 0.3;
+    box-shadow: 0px 0x 5px rgba(255, 255, 255, 0.8),
+      3px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  #topSidebar button:active {
+    opacity: 1;
+    box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+      inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+    color: #79e3b6;
+  }
+  
+  
+  
+  
+  /*-------------------------------------------------*/
+  
+  #bottomSidebar {
+    grid-area: bottomSidebar;
+  
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+  }
+  #bottomSidebar button{
+    width: 50%;
+  }
+  
+  #bottomSidebar button{
+    width: 70%;
+    background-color: #4E6BBA;
+    color: white;
+    border-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  
+  #bottomSidebar button:hover{
+    opacity: 0.3;
+    box-shadow: 0px 0x 5px rgba(255, 255, 255, 0.8),
+      3px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  #bottomSidebar button:active {
+    opacity: 1;
+    box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+      inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+    color: #79e3b6;
+  }
+    
+  
+  /***************************************************************************************************************************************************/
+  /*Main*/
+  
+  #mainContent {
+    grid-area: main;
+    height: 100%;
+    background-color: #F2F2F2;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+  }
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************************************************************************************************/
+/*Tablet*/
+
+
+@media only screen 
+and (max-width : 999px) and (min-width : 650px) { 
+  
+  html, body, #root {
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  
+  #root {
+    display: grid;
+    grid-template-columns: 200px auto auto auto;
+    grid-template-rows: 170px auto auto;
+    grid-template-areas: 
+      "header header header header"
+      "sidebar main main main"
+      "sidebar main main main";
+  }
+  
+  
+  #mainContent {
+    overflow: visible;
+  }
+  
+  /*HEADER*/
+  
+  Header {
+    grid-area: header;
+    background-color: #FF914D;
+  }
+
+  #mobileHeader {
+    display: none;
+  }
+  
+  
+  #topHeader {
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: 0px 5px #888888;
+    color: white;
+    background-color: #5ba2ff;
+    height: 30%;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  
+  #topHeaderLeft {
+    margin-left: 70px;
+  }
+  
+  #topHeaderLeft div:first-of-type {
+    border-right: 2px solid black;
+    height:50%
+  }
+  
+  #topHeaderLeft div:last-of-type {
+    border-left: 2px solid black;
+    height:50%
+  }
+  
+  #topHeaderRight {
+    margin-right: 20px;
+  }
+  
+  #topHeader div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #topHeader div >*{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  
+  /*-------------------------------------------------*/
+  
+  
+  #bottomHeader {
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #bottomHeader div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  #headerLogo {
+    width: 200px;
+  }
+  
+  #headerSearch input {
+    width: 400px;
+    height: 30%;
+  }
+  
+  #bottomHeader button:first-of-type {
+    width: 150px;
+    height: 45px;
+    margin: 10px;
+    background-color: #4E6BBA;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+  }
+  #bottomHeader button:last-of-type {
+    width: 100px;
+    height: 45px;
+    margin: 10px;
+    background-color: #4E6BBA;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+  }
+  
+  
+  #bottomHeader button:hover{
+    opacity: 0.3;
+    box-shadow: 0px 0x 5px rgba(255, 255, 255, 0.8),
+      3px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  #bottomHeader button:active {
+    opacity: 1;
+    box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+      inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+    color: #79e3b6;
+  }
+  
+  
+  #shoppingCart {
+    display: none;
+    border: 2px solid red;
+    height: 500px;
+    width: 600px;
+    position:absolute;
+    background-color: rgb(255, 255, 255);
+    right: 0;
+  
+    flex-direction: column;
+  
+  }
+  
+  #shoppingCartItems {
+    height: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  
+  #shoppingCart button {
+    height: 10%;
+  }
+  
+  
+  
+  
+  /***************************************************************************************************************************************************/
+  /*SIDEBAR*/
+
+  #HamburgerMenu {
+    display: none;
+  }
+
+  
+  
+  #sideBar {
+  
+    background-color: #ff914dcc;
+    grid-area: sidebar;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 50px;
+    grid-template-areas: 
+      "topSidebar"
+      "bottomSidebar";
+  }
+  
+  #topSidebar {
+    grid-area: topSidebar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #topSidebar button{
+    width: 90%;
+    height: 50px;
+    background-color: white;
+  }
+  
+  #topSidebar >*{
+    margin: 20px;
+  } 
+  
+  #topSidebar button:first-of-type {
+    margin-top: 100px;
+  }
+  
+  
+  #topSidebar button:hover{
+    opacity: 0.3;
+    box-shadow: 0px 0x 5px rgba(255, 255, 255, 0.8),
+      3px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  #topSidebar button:active {
+    opacity: 1;
+    box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+      inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+    color: #79e3b6;
+  }
+  
+  
+  
+  
+  /*-------------------------------------------------*/
+  
+  #bottomSidebar {
+    grid-area: bottomSidebar;
+  
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+  }
+  #bottomSidebar button{
+    width: 50%;
+  }
+  
+  #bottomSidebar button{
+    width: 70%;
+    background-color: #4E6BBA;
+    color: white;
+    border-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  
+  #bottomSidebar button:hover{
+    opacity: 0.3;
+    box-shadow: 0px 0x 5px rgba(255, 255, 255, 0.8),
+      3px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  #bottomSidebar button:active {
+    opacity: 1;
+    box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+      inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+    color: #79e3b6;
+  }
+    
+  
+  /***************************************************************************************************************************************************/
+  /*Main*/
+  
+  #mainContent {
+    grid-area: main;
+    height: 100%;
+    background-color: #F2F2F2;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Phone*/
+
+@media only screen 
+and (max-width : 649px) { 
+  
+  html, body, #root {
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+  }
+  
+  
+  #root {
+    width: 100%;
+  }
+  
+  
+  #mainContent {
+    width: 100%;
+  }
+  
+  /*HEADER*/
+ #mainHeader {
+    display: none;
+  }
+
+  #mobileHeader {
+    background-color: #FF914D;
+    width: 100%;
+    height: 120px;
+
+  }
+
+
+  #topHeader {
+
+    height: 40%;
+    color: white;
+    background-color: #5ba2ff;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #topHeader >* {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+
+  
+  /*-------------------------------------------------*/
+  
+  
+  #bottomHeader {
+    background-color: #FF914D;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #bottomHeader div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #hamburgerButton {
+    width: 80px;
+    height: 100%;
+  }
+  
+  #headerLogo {
+    width: 200px;
+  }
+  
+
+  #sideBar {
+    display: none;
+  }
+  
+
+
+
+  /***************************************************************************************************************************************************/
+  /*GamburgerMenu*/
+
+  #HamburgerMenu {
+    position: absolute;
+    background-color: rgb(206, 206, 206);
+    top: 120px;
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #HamburgerMenu div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+
+  #HamburgerMenu Button {
+    width: 90%;
+    height: 50px;
+    background-color: white;
+    margin: 2px;
+  }
+  
+
+  #hamburgerTop {
+
+  }
+
+  #hamburgerMid {
+    
+  }
+
+  #hamburgerBottom {
+    
+  }
+  
+  /***************************************************************************************************************************************************/
+  /*Main*/
+  
+  #mainContent {
+    grid-area: main;
+    height: 100%;
+    background-color: #F2F2F2;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+  }
+  
+}

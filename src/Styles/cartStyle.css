@@ -1,0 +1,173 @@
+@media only screen 
+and (min-width : 1000px) {  
+
+
+
+#cartDiv {
+    width: 100vw;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+#cartContent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#cartBox {
+    width: 40%;
+    min-width: 520px;
+    height: 100%;
+    border-right: 2px solid black;
+
+    display: flex;
+
+    flex-direction: column;
+    border: 2px solid blue;
+
+
+}
+
+#productBoxforCart {
+    height: 90%;
+    width: 100%;
+    border: 2px solid red;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: scroll;
+    overflow-x: hidden;
+    
+
+}
+
+
+#productBoxforCart >*{
+    margin: 10px;
+}
+
+#priceBoxForCart  {
+    display: flex;
+    justify-content: center;
+}
+
+#payButtonDiv{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+#payButton {
+    width: 200px;
+    height: 40px;
+}
+}
+
+
+
+
+
+@media only screen 
+and (max-width : 999px) and (min-width : 650px) { 
+
+
+    #cartDiv {
+        width: 100vw;
+        min-height: 70vh;
+        display: flex;
+        justify-content: center;
+        border: 2px solid black;
+        overflow: scroll;
+    }
+    
+    #cartContent {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #cartBox {
+        width: 40%;
+        min-width: 520px;
+        height: 100%;
+        border-right: 2px solid black;
+    
+        display: flex;
+    
+        flex-direction: column;
+        border: 2px solid rgb(0, 0, 0);
+        margin: 10px;
+    
+    
+    }
+    
+    #productBoxforCart {
+        height: 200px;
+        width: 100%;
+        border-bottom: 1px solid rgb(0, 0, 0);
+    
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        overflow: scroll;
+        overflow-x: hidden;
+        
+    
+    }
+    
+    
+    #productBoxforCart >*{
+        margin: 10px;
+    }
+    
+    #priceBoxForCart  {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #payButtonDiv{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    #payButton {
+        width: 200px;
+        height: 40px;
+    }
+
+}
+
+
+
+
+@media only screen 
+and (max-width : 449px){ 
+
+#cartBox {
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#productBoxforCart {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: scroll;
+
+    height: 200px;
+}
+
+}

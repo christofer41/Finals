@@ -1,0 +1,180 @@
+#paymentMain {
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#paymentContainer {
+    width: 80%;
+    height: 100%;
+
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#infoInput {
+    width: 100%;
+
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#infoInput input {
+    width: 200px;
+}
+
+
+
+
+#deliveryAndPaymentInfo {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+#deliveryAndPaymentInfo >* {
+    margin: 10px;
+}
+
+#deliveryBox {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#deliveryChoices {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none; 
+}
+
+#deliveryChoices div {
+    box-shadow: 5px 5px 5px #000000;
+    color: rgb(0, 2, 122);
+    background-color: #FFA770;
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+}
+
+#deliveryChoices div >* {
+    margin: 5px;
+}
+
+#paymentOptions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#paymentOptions button {
+    width: 33.33%;
+}
+
+#paymentInfo {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    flex-wrap: wrap;
+}
+
+#paymentInfo >* {
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+#paymentInfo >* >* {
+    margin: 5px;
+}
+
+#cardPay {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#klarnaPay {
+    display: none;
+
+    justify-content: center;
+    width: 100%;
+
+}
+
+#SwishPay {
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#cardNumber {
+    max-width: 177px;
+}
+#cardMonth {
+    max-width: 120px;
+
+}
+#cardCvc {
+    max-width: 100px;
+
+}
+
+
+
+#klarnaPay div {
+    box-shadow: 5px 5px 5px #000000;
+    color: rgb(0, 2, 122);
+    background-color: #FFA770;
+    width: 200px;
+    height: 50px;
+    user-select: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#orderButton {
+    margin: 0;
+    width: 80%;
+}
+
+
+#deliveryChoices div:hover, #klarnaPay div:hover{
+    opacity: 0.3;
+    box-shadow: 0px 0x 5px rgba(255, 255, 255, 0.8),
+      3px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+#deliveryChoices div:active, #klarnaPay div:active{
+    opacity: 1;
+    box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+      inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+    color: #79e3b6;
+  }
